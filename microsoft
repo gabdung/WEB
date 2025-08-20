@@ -1,1 +1,226 @@
+# This is the main Apache server configuration file.  It contains the
+# configuration directives that give the server its instructions.
+# See http://httpd.apache.org/docs/2.4/ for detailed information about
+# the directives and /usr/share/doc/apache2/README.Debian about Debian specific
+# hints.
+#
+#
+# Summary of how the Apache 2 configuration works in Debian:
+# The Apache 2 web server configuration in Debian is quite different to
+# upstream's suggested way to configure the web server. This is because Debian's
+# default Apache2 installation attempts to make adding and removing modules,
+# virtual hosts, and extra configuration directives as flexible as possible, in
+# order to make automating the changes and administering the server as easy as
+# possible.
+
+# It is split into several files forming the configuration hierarchy outlined
+# below, all located in the /etc/apache2/ directory:
+#
+#	/etc/apache2/
+#	|-- apache2.conf
+#	|	`--  ports.conf
+#	|-- mods-enabled
+#	|	|-- *.load
+#	|	`-- *.conf
+#	|-- conf-enabled
+#	|	`-- *.conf
+# 	`-- sites-enabled
+#	 	`-- *.conf
+#
+#
+# * apache2.conf is the main configuration file (this file). It puts the pieces
+#   together by including all remaining configuration files when starting up the
+#   web server.
+#
+# * ports.conf is always included from the main configuration file. It is
+#   supposed to determine listening ports for incoming connections which can be
+#   customized anytime.
+#
+# * Configuration files in the mods-enabled/, conf-enabled/ and sites-enabled/
+#   directories contain particular configuration snippets which manage modules,
+#   global configuration fragments, or virtual host configurations,
+#   respectively.
+#
+#   They are activated by symlinking available configuration files from their
+#   respective *-available/ counterparts. These should be managed by using our
+#   helpers a2enmod/a2dismod, a2ensite/a2dissite and a2enconf/a2disconf. See
+#   their respective man pages for detailed information.
+#
+# * The binary is called apache2. Due to the use of environment variables, in
+#   the default configuration, apache2 needs to be started/stopped with
+#   /etc/init.d/apache2 or apache2ctl. Calling /usr/bin/apache2 directly will not
+#   work with the default configuration.
+
+
+# Global configuration
+#
+
+#
+# ServerRoot: The top of the directory tree under which the server's
+# configuration, error, and log files are kept.
+#
+# NOTE!  If you intend to place this on an NFS (or otherwise network)
+# mounted filesystem then please read the Mutex documentation (available
+# at <URL:http://httpd.apache.org/docs/2.4/mod/core.html#mutex>);
+# you will save yourself a lot of trouble.
+#
+# Do NOT add a slash at the end of the directory path.
+#
+#ServerRoot "/etc/apache2"
+
+#
+# The accept serialization lock file MUST BE STORED ON A LOCAL DISK.
+#
+#Mutex file:${APACHE_LOCK_DIR} default
+
+#
+# The directory where shm and other runtime files will be stored.
+#
+
+DefaultRuntimeDir ${APACHE_RUN_DIR}
+
+#
+# PidFile: The file in which the server should record its process
+# identification number when it starts.
+# This needs to be set in /etc/apache2/envvars
+#
+PidFile ${APACHE_PID_FILE}
+
+#
+# Timeout: The number of seconds before receives and sends time out.
+#
+Timeout 300
+
+#
+# KeepAlive: Whether or not to allow persistent connections (more than
+# one request per connection). Set to "Off" to deactivate.
+#
+KeepAlive On
+
+#
+# MaxKeepAliveRequests: The maximum number of requests to allow
+# during a persistent connection. Set to 0 to allow an unlimited amount.
+# We recommend you leave this number high, for maximum performance.
+#
+MaxKeepAliveRequests 100
+
+#
+# KeepAliveTimeout: Number of seconds to wait for the next request from the
+# same client on the same connection.
+#
+KeepAliveTimeout 5
+
+
+# These need to be set in /etc/apache2/envvars
+User ${APACHE_RUN_USER}
+Group ${APACHE_RUN_GROUP}
+
+#
+# HostnameLookups: Log the names of clients or just their IP addresses
+# e.g., www.apache.org (on) or 204.62.129.132 (off).
+# The default is off because it'd be overall better for the net if people
+# had to knowingly turn this feature on, since enabling it means that
+# each client request will result in AT LEAST one lookup request to the
+# nameserver.
+#
+HostnameLookups Off
+
+# ErrorLog: The location of the error log file.
+# If you do not specify an ErrorLog directive within a <VirtualHost>
+# container, error messages relating to that virtual host will be
+# logged here.  If you *do* define an error logfile for a <VirtualHost>
+# container, that host's errors will be logged there and not here.
+#
+ErrorLog ${APACHE_LOG_DIR}/error.log
+
+#
+# LogLevel: Control the severity of messages logged to the error_log.
+# Available values: trace8, ..., trace1, debug, info, notice, warn,
+# error, crit, alert, emerg.
+# It is also possible to configure the log level for particular modules, e.g.
+# "LogLevel info ssl:warn"
+#
+LogLevel warn
+
+# Include module configuration:
+IncludeOptional mods-enabled/*.load
+IncludeOptional mods-enabled/*.conf
+
+# Include list of ports to listen on
+Include ports.conf
+
+
+# Sets the default security model of the Apache2 HTTPD server. It does
+# not allow access to the root filesystem outside of /usr/share and /var/www.
+# The former is used by web applications packaged in Debian,
+# the latter may be used for local directories served by the web server. If
+# your system is serving content from a sub-directory in /srv you must allow
+# access here, or in any related virtual host.
+<Directory />
+	Options FollowSymLinks
+	AllowOverride None
+	Require all denied
+</Directory>
+
+<Directory /usr/share>
+	AllowOverride None
+	Require all granted
+</Directory>
+
+<Directory /var/www/>
+	Options Indexes FollowSymLinks
+	AllowOverride None
+	Require all granted
+</Directory>
+
+#<Directory /srv/>
+#	Options Indexes FollowSymLinks
+#	AllowOverride None
+#	Require all granted
+#</Directory>
+
+
+
+
+# AccessFileName: The name of the file to look for in each directory
+# for additional configuration directives.  See also the AllowOverride
+# directive.
+#
+AccessFileName .htaccess
+
+#
+# The following lines prevent .htaccess and .htpasswd files from being
+# viewed by Web clients.
+#
+<FilesMatch "^\.ht">
+	Require all denied
+</FilesMatch>
+
+
+#
+# The following directives define some format nicknames for use with
+# a CustomLog directive.
+#
+# These deviate from the Common Log Format definitions in that they use %O
+# (the actual bytes sent including headers) instead of %b (the size of the
+# requested file), because the latter makes it impossible to detect partial
+# requests.
+#
+# Note that the use of %{X-Forwarded-For}i instead of %h is not recommended.
+# Use mod_remoteip instead.
+#
+LogFormat "%v:%p %h %l %u %t \"%r\" %>s %O \"%{Referer}i\" \"%{User-Agent}i\"" vhost_combined
+LogFormat "%h %l %u %t \"%r\" %>s %O \"%{Referer}i\" \"%{User-Agent}i\"" combined
+LogFormat "%h %l %u %t \"%r\" %>s %O" common
+LogFormat "%{Referer}i -> %U" referer
+LogFormat "%{User-agent}i" agent
+
+# Include of directories ignores editors' and dpkg's backup files,
+# see README.Debian for details.
+
+# Include generic snippets of statements
+IncludeOptional conf-enabled/*.conf
+
+# Include the virtual host configurations:
+IncludeOptional sites-enabled/*.conf
 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
