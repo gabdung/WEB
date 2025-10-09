@@ -1,0 +1,26 @@
+root@localhost:~# curl -v -H 'sec-ch-ua-platform: "Windows"' -H 'Referer: https://crd2.life/cat/697' -H 'X-Requested-With: XMLHttpRequest' -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' -H 'Accept: application/json, text/javascript, */*; q=0.01' -H 'sec-ch-ua: "Chromium";v="140", "Not=A?Brand";v="24", "Google Chrome";v="140"' -H 'sec-ch-ua-mobile: ?0' 'https://crd2.life/cart/add/2749966/697'
+< HTTP 200
+< Connection: keep-alive
+< Content-Encoding: gzip
+< Content-Type: text/html; charset=UTF-8
+< Date: Mon, 29 Sep 2025 22:17:43 GMT
+< Server: nginx
+< Set-Cookie: ci_cookies=lfD3M7%2FEKN3lfrrz7e68UkjE3bnewIoLjY9hKdJzf8r7ROqPK1C8ETmAyRZMW%2FTfEvrMAcoBWGaRL4Bra5d0oetmZGE38MIJb%2FTFoauIjPVwG7VAZfX%2BFWPFE9nL3GTdi%2Bd4hzbFupfUPCplGnC1J9OIK%2B8UlN%2BpjEMEATfqVPNPce2P%2FBA4oA1s%2FUkwoAguspHfbIXOHWroot@localhost:~# curl -v -H 'sec-ch-ua-platform: "Windows"' -H 'Referer: https://crd2.life/cat/697' -H 'X-Requested-With: XMLHttpRequest' -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' -H 'Accept: application/json, text/javascript, */*; q=0.01' -H 'sec-ch-ua: "Chromium";v="140", "Not=A?Brand";v="24", "Google Chrome";v="140"' -H 'sec-ch-ua-mobile: ?0' 'https://crd2.life/cart/add/2749966/697'
+< HTTP 200one)
+< Connection: keep-alive
+< Content-Encoding: gzip443...
+< Content-Type: text/html; charset=UTF-8
+< Date: Mon, 29 Sep 2025 22:17:43 GMTt hello (1):< Server: nginx
+< Set-Cookie: ci_cookies=lfD3M7%2FEKN3lfrrz7e68UkjE3bnewIoLjY9hKdJzf8r7ROqPK1C8ETmAyRZMW%2FTfEvrMAcoBWGaRL4Bra5d0oetmZGE38MIJb%2FTFoauIjPVwG7VAZfX%2BFWPFE9nL3GTdi%2Bd4hzbFupfUPCplGnC1J9OIK%2B8UlN%2BpjEMEATfqVPNPce2P%2FBA4oA1s%2FUkwoAguspHfbIXOHWj5VYvDgvG6tAQ7wLBi7%2FPHyPW4pZBuu1GF3eH9lWCVwqiR788NhnS%2BJtCvk9CSwKpdfD2TGwyrDJysoRU3lIpWoli%2FO4FAzJ7gAUflrOwvBlP8k%2BbDGO7Z1JH9UZeNYssNn2O9muAJbroot@localhost:~# curl -v -H 'sec-ch-ua-platform: "Windows"' -H 'Referer: https://crd2.life/cat/697' -H 'X-Requested-With: XMLHttpRequest' -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' -H 'Accept: application/json, text/javascript, */*; q=0.01' -H 'sec-ch-ua: "Chromium";v="140", "Not=A?Brand";v="24", "Google Chrome";v="140"' -H 'sec-ch-ua-mobile: ?0' 'https://crd2.life/cart/add/2749966/697'
+< HTTP 200rl offers h2,http/1.1
+< Connection: keep-alivedshake, Client hello (1):< Content-Encoding: gzip
+< Content-Type: text/html; charset=UTF-8sr/etc/tl< Date: Mon, 29 Sep 2025 22:17:43 GMT
+< Server: nginxa/data/com.termux/files/usr/etc/tl< Set-Cookie: ci_cookies=lfD3M7%2FEKN3lfrrz7e68UkjE3bnewIoLjY9hKdJzf8r7ROqPK1C8ETmAyRZMW%2FTfEvrMAcoBWGaRL4Bra5d0oetmZGE38MIJb%2FTFoauIjPVwG7VAZfX%2BFWPFE9nL3GTdi%2Bd4hzbFupfUPCplGnC1J9OIK%2B8UlN%2BpjEMEATfqVPNPce2P%2FBA4oA1s%2FUkwoAguspHfbIXOHWj5VYvDgvG6tAQ7wLBi7%2FPHyPW4pZBuu1GF3eH9lWCVwqiR788NhnS%2BJtCvk9CSwKpdfD2TGwyrDJysoRU3lIpWoli%2FO4FAzJ7gAUflrOwvBlP8k%2BbDGO7Z1JH9UZeNYssNn2O9muAJbIlFsjW%2BM7FKis2l6867rQHAzxbqAuIdKnYVHT6u50A%2FF4T%2BIM0csLJWMsZ7ndje9GS90JkgZ8olYnrkFW2CNvM%3D4ee3f5c542b78305a6408ae3ddc2e05a62263804; expires=Tue, 30-Sep-2025 23:17:43 GMT; Max-Age=90000; path=} } } "cancel": []2025-09-30 01:17:43",072000 23:bash: syntax error near unexpected token `}'wline
+bash: curl: command not found
+bash: HTTP: No such file or directory
+bash: Connection:: No such file or directory
+bash: Content-Encoding:: No such file or directory
+bash: Content-Type:: No such file or directory
+bash: Date:: No such file or directory
+bash: Server:: No such file or directory
+>
