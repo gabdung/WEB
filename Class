@@ -1,0 +1,400 @@
+<manifest versionCode="348508105" versionName="140.0.3485.81" compileSdkVersion="36" compileSdkVersionCodename="16" package="com.microsoft.emmx" platformBuildVersionCode="36" platformBuildVersionName="16">
+<uses-sdk minSdkVersion="29" targetSdkVersion="36"/>
+<uses-feature glEsVersion="0x30000"/>
+<uses-permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+<uses-permission name="android.permission.ACCESS_FINE_LOCATION"/>
+<uses-permission-sdk-23 name="android.permission.ACCESS_WIFI_STATE"/>
+<uses-permission name="android.permission.ACCESS_NETWORK_STATE"/>
+<uses-permission name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+<uses-permission name="com.android.vending.BILLING"/>
+<uses-permission name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+<uses-permission-sdk-23 name="com.microsoft.emmx.configurator.READ"/>
+<uses-permission name="android.permission.FOREGROUND_SERVICE_MICROPHONE"/>
+<uses-permission name="com.google.android.gms.permission.AD_ID"/>
+<uses-permission name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+<uses-permission name="android.permission.RECEIVE_SMS"/>
+<uses-feature name="android.hardware.telephony" required="false"/>
+<uses-permission-sdk-23 name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+<uses-permission-sdk-23 name="android.permission.BLUETOOTH_ADMIN" maxSdkVersion="30"/>
+<uses-permission-sdk-23 name="android.permission.BLUETOOTH_CONNECT"/>
+<uses-permission-sdk-23 name="android.permission.BLUETOOTH_ADVERTISE"/>
+<uses-permission-sdk-23 name="android.permission.BLUETOOTH"/>
+<uses-permission-sdk-23 name="android.permission.BLUETOOTH_SCAN" usesPermissionFlags="0x10000"/>
+<uses-permission-sdk-23 name="android.permission.READ_CONTACTS"/>
+<uses-permission-sdk-23 name="android.permission.REORDER_TASKS"/>
+<uses-permission-sdk-23 name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+<uses-permission name="android.permission.CAMERA"/>
+<uses-permission name="android.permission.CAPTURE_KEYBOARD"/>
+<uses-permission name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+<uses-permission name="android.permission.FOREGROUND_SERVICE"/>
+<uses-permission name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION"/>
+<uses-permission name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+<uses-permission name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+<uses-permission name="android.permission.RUN_USER_INITIATED_JOBS"/>
+<uses-permission name="android.permission.GET_ACCOUNTS"/>
+<uses-permission name="android.permission.INTERNET"/>
+<uses-permission name="android.permission.MANAGE_ACCOUNTS"/>
+<uses-permission name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+<uses-permission name="android.permission.NFC"/>
+<uses-permission name="android.permission.POST_NOTIFICATIONS"/>
+<uses-permission name="android.permission.QUERY_ALL_PACKAGES"/>
+<uses-permission name="android.permission.READ_EXTERNAL_STORAGE"/>
+<uses-permission-sdk-23 name="android.permission.READ_MEDIA_AUDIO"/>
+<uses-permission-sdk-23 name="android.permission.READ_MEDIA_IMAGES"/>
+<uses-permission-sdk-23 name="android.permission.READ_MEDIA_VIDEO"/>
+<uses-permission-sdk-23 name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED"/>
+<uses-permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+<uses-permission name="android.permission.RECORD_AUDIO"/>
+<uses-permission name="android.permission.REPOSITION_SELF_WINDOWS"/>
+<uses-permission name="android.permission.USE_CREDENTIALS"/>
+<uses-permission-sdk-23 name="android.permission.USE_BIOMETRIC"/>
+<uses-permission-sdk-23 name="android.permission.USE_FINGERPRINT"/>
+<uses-permission name="android.permission.VIBRATE"/>
+<uses-permission name="android.permission.WAKE_LOCK"/>
+<uses-permission name="android.permission.WRITE_EXTERNAL_STORAGE" maxSdkVersion="29"/>
+<uses-permission name="com.google.android.gms.permission.AD_ID"/>
+<uses-permission name="android.permission.CREDENTIAL_MANAGER_QUERY_CANDIDATE_CREDENTIALS"/>
+<uses-permission name="android.permission.CREDENTIAL_MANAGER_SET_ALLOWED_PROVIDERS"/>
+<uses-permission name="android.permission.CREDENTIAL_MANAGER_SET_ORIGIN"/>
+<uses-feature name="android.software.vr.mode" required="false"/>
+<uses-feature name="android.hardware.vr.high_performance" required="false"/>
+<uses-feature name="android.hardware.screen.landscape" required="false"/>
+<uses-feature name="android.hardware.vr.headtracking" required="false" version="1"/>
+<uses-feature name="android.hardware.sensor.gyroscope" required="false"/>
+<uses-feature name="android.hardware.sensor.accelerometer" required="false"/>
+<uses-permission-sdk-23 name="android.permission.SCENE_UNDERSTANDING_FINE"/>
+<uses-permission-sdk-23 name="android.permission.HAND_TRACKING"/>
+<permission name="com.microsoft.emmx.permission.CHILD_SERVICE" protectionLevel="0x2"/>
+<permission name="com.microsoft.emmx.permission.READ_WRITE_BOOKMARK_FOLDERS" protectionLevel="0x3"/>
+<permission name="com.microsoft.emmx.TOS_ACKED" protectionLevel="0x3"/>
+<permission name="com.microsoft.emmx.permission.C2D_MESSAGE" protectionLevel="0x2"/>
+<permission label="Debug web pages" name="com.microsoft.emmx.permission.DEBUG" protectionLevel="0x2"/>
+<uses-permission name="com.microsoft.emmx.permission.C2D_MESSAGE"/>
+<uses-permission name="com.microsoft.emmx.permission.READ_WRITE_BOOKMARK_FOLDERS"/>
+<uses-permission name="com.microsoft.emmx.TOS_ACKED"/>
+<uses-permission name="com.chrome.permission.DEVICE_EXTRAS"/>
+<uses-permission name="com.google.android.c2dm.permission.RECEIVE"/>
+<uses-permission name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+<uses-permission name="com.google.android.apps.now.CURRENT_ACCOUNT_ACCESS"/>
+<uses-feature name="android.hardware.location.gps" required="false"/>
+<uses-feature name="android.hardware.camera" required="false"/>
+<uses-feature name="android.hardware.camera.autofocus" required="false"/>
+<uses-feature name="android.hardware.microphone" required="false"/>
+<uses-feature name="android.hardware.touchscreen" required="false"/>
+<queries>
+<package name="com.microsoft.office.outlook.dev"/>
+<package name="com.microsoft.office.outlook.dawg"/>
+<package name="com.microsoft.office.outlook"/>
+<package name="com.microsoft.teams"/>
+<package name="com.microsoft.skype.teams.alpha"/>
+<package name="com.microsoft.skype.teams.dev"/>
+<package name="com.microsoft.skype.teams.beta"/>
+<intent>
+<action name="com.android.vending.billing.InAppBillingService.BIND"/>
+</intent>
+<intent>
+<action name="com.google.android.apps.play.billingtestcompanion.BillingOverrideService.BIND"/>
+</intent>
+<package name="com.android.creator"/>
+<package name="com.mdid.msa"/>
+<package name="com.samsung.android.deviceidservice"/>
+<package name="com.coolpad.deviceidsupport"/>
+<package name="com.heytap.openid"/>
+<intent>
+<action name="com.huawei.hms.core.aidlservice"/>
+</intent>
+<intent>
+<action name="com.huawei.hms.core"/>
+</intent>
+<intent>
+<action name="android.intent.action.VIEW"/>
+</intent>
+<package name="com.azure.authenticator"/>
+<package name="com.microsoft.identity.testuserapp"/>
+<package name="com.microsoft.windowsintune.companyportal"/>
+<package name="com.microsoft.mockauthapp"/>
+<package name="com.microsoft.mockcp"/>
+<package name="com.microsoft.mockltw"/>
+<package name="com.microsoft.appmanager"/>
+<intent>
+<action name="android.intent.action.VIEW"/>
+<category name="android.intent.category.BROWSABLE"/>
+<data scheme="https"/>
+</intent>
+<intent>
+<action name="android.support.customtabs.action.CustomTabsService"/>
+</intent>
+<package name="com.microsoft.scmx"/>
+<intent>
+<action name="com.microsoft.tokenshare.TokenSharingService"/>
+</intent>
+<package name="com.google.android.gms.policy_cast_dynamite"/>
+<package name="com.google.ar.core"/>
+</queries>
+<uses-permission name="com.asus.msa.SupplementaryDID.ACCESS"/>
+<uses-permission name="freemme.permission.msa"/>
+<permission name="com.microsoft.emmx.permission.PROCESS_PUSH_MSG" protectionLevel="0x2"/>
+<permission name="com.microsoft.emmx.permission.PUSH_PROVIDER" protectionLevel="0x2"/>
+<permission name="com.microsoft.emmx.permission.PUSH_WRITE_PROVIDER" protectionLevel="0x2"/>
+<uses-permission name="com.microsoft.emmx.permission.PROCESS_PUSH_MSG"/>
+<uses-permission name="com.microsoft.emmx.permission.PUSH_PROVIDER"/>
+<uses-permission name="android.permission.ACCESS_WIFI_STATE"/>
+<uses-permission name="android.permission.FLASHLIGHT"/>
+<uses-permission name="android.permission.HIGH_SAMPLING_RATE_SENSORS"/>
+<uses-permission name="com.android.alarm.permission.SET_ALARM"/>
+<uses-permission name="android.permission.SEND_SMS"/>
+<uses-permission name="android.permission.READ_CONTACTS"/>
+<uses-permission name="android.permission.CALL_PHONE"/>
+<uses-permission name="android.permission.READ_PHONE_STATE"/>
+<uses-permission name="android.permission.READ_CALENDAR"/>
+<uses-permission name="android.permission.WRITE_CALENDAR"/>
+<uses-permission name="android.permission.DETECT_SCREEN_CAPTURE" minSdkVersion="34"/>
+<uses-permission name="com.orange.update.permission.READ_ATTRIBUTION"/>
+<uses-feature name="android.hardware.camera.any" required="false"/>
+<uses-feature name="android.hardware.camera.flash" required="false"/>
+<uses-feature name="android.hardware.usb.host" required="false"/>
+<uses-feature name="android.hardware.nfc" required="false"/>
+<uses-permission name="android.permission.USE_BIOMETRIC"/>
+<uses-permission name="android.permission.USE_FINGERPRINT"/>
+<application label="@370410302" icon="@370212865" name="org.chromium.chrome.browser.base.SplitChromeApplication" manageSpaceActivity="@370415713" allowBackup="false" largeHeap="false" supportsRtl="true" usesCleartextTraffic="true" networkSecurityConfig="@370671736" appComponentFactory="org.chromium.chrome.browser.base.SplitCompatAppComponentFactory" zygotePreloadName="org.chromium.content_public.app.ZygotePreload" allowAudioPlaybackCapture="false" requestLegacyExternalStorage="true" memtagMode="1" enableOnBackInvokedCallback="false">
+<meta-data name="com.microsoft.intune.mam.MAMMultiIdentity" value="true"/>
+<meta-data name="com.microsoft.intune.mam.WorkingTime" value="true"/>
+<meta-data name="com.microsoft.intune.mam.aad.ClientID" value="ecd6b820-32c2-49b6-98a6-444530e5a77a"/>
+<activity theme="@370475667" name="org.chromium.chrome.browser.document.ChromeLauncherActivity" taskAffinity="" excludeFromRecents="true" configChanges="0x1fb3" relinquishTaskIdentity="true"/>
+<activity-alias name="com.google.android.apps.chrome.IntentDispatcher" exported="true" targetActivity="org.chromium.chrome.browser.document.ChromeLauncherActivity">
+<intent-filter autoVerify="true">
+<action name="android.intent.action.VIEW"/>
+<category name="android.intent.category.DEFAULT"/>
+<category name="android.intent.category.BROWSABLE"/>
+<data scheme="https"/>
+<data host="krs.microsoft.com"/>
+<data pathPattern="/r/9G5u7FkJ"/>
+</intent-filter>
+<intent-filter autoVerify="true">
+<action name="android.intent.action.VIEW"/>
+<category name="android.intent.category.DEFAULT"/>
+<category name="android.intent.category.BROWSABLE"/>
+<data scheme="https"/>
+<data host="krs.microsoft.com"/>
+<data pathPattern="/r/4no6uUOl"/>
+</intent-filter>
+<intent-filter>
+<action name="android.intent.action.SEND"/>
+<action name="android.intent.action.SEND_MULTIPLE"/>
+<category name="android.intent.category.DEFAULT"/>
+<category name="android.intent.category.APP_BROWSER"/>
+<data mimeType="image/*"/>
+<data mimeType="video/*"/>
+<data mimeType="audio/*"/>
+<data mimeType="text/plain"/>
+<data mimeType="application/*"/>
+</intent-filter>
+<intent-filter>
+<action name="android.intent.action.VIEW"/>
+<category name="android.intent.category.DEFAULT"/>
+<data mimeType="application/pdf"/>
+</intent-filter>
+<intent-filter>
+<action name="android.intent.action.MAIN"/>
+<category name="android.intent.category.NOTIFICATION_PREFERENCES"/>
+</intent-filter>
+<intent-filter>
+<action name="android.intent.action.VIEW"/>
+<category name="android.intent.category.DEFAULT"/>
+<data scheme="googlechrome"/>
+<data scheme="http"/>
+<data scheme="https"/>
+<data scheme="about"/>
+<category name="android.intent.category.BROWSABLE"/>
+</intent-filter>
+<intent-filter>
+<action name="android.intent.action.VIEW"/>
+<category name="android.intent.category.DEFAULT"/>
+<data scheme="googlechrome"/>
+<data scheme="http"/>
+<data scheme="https"/>
+<data scheme="about"/>
+<category name="android.intent.category.BROWSABLE"/>
+<data mimeType="text/html"/>
+<data mimeType="text/plain"/>
+<data mimeType="application/xhtml+xml"/>
+</intent-filter>
+<intent-filter>
+<action name="android.intent.action.SEND"/>
+<category name="android.intent.category.DEFAULT"/>
+<data mimeType="text/plain"/>
+</intent-filter>
+<intent-filter>
+<action name="android.intent.action.VIEW"/>
+<category name="android.intent.category.DEFAULT"/>
+<data scheme="content"/>
+<data mimeType="text/html"/>
+<data mimeType="text/plain"/>
+<data mimeType="application/xhtml+xml"/>
+</intent-filter>
+<intent-filter>
+<action name="android.intent.action.VIEW"/>
+<category name="android.intent.category.DEFAULT"/>
+<category name="android.intent.category.BROWSABLE"/>
+<data scheme="file"/>
+<data mimeType="multipart/related"/>
+</intent-filter>
+<intent-filter>
+<action name="android.intent.action.VIEW"/>
+<category name="android.intent.category.DEFAULT"/>
+<data scheme="content"/>
+<data mimeType="multipart/related"/>
+</intent-filter>
+<intent-filter>
+<action name="android.intent.action.VIEW"/>
+<category name="android.intent.category.DEFAULT"/>
+<data scheme="file"/>
+<data scheme="content"/>
+<data mimeType="message/rfc822"/>
+</intent-filter>
+<intent-filter>
+<action name="android.intent.action.VIEW"/>
+<category name="android.intent.category.DEFAULT"/>
+<category name="android.intent.category.BROWSABLE"/>
+<data scheme="file"/>
+<data host="*"/>
+<data pathPattern="/.*\.mhtml"/>
+<data pathPattern="/.*\.mht"/>
+<data pathPattern="/.*\..*\.mhtml"/>
+<data pathPattern="/.*\..*\.mht"/>
+<data pathPattern="/.*\..*\..*\.mhtml"/>
+<data pathPattern="/.*\..*\..*\.mht"/>
+<data pathPattern="/.*\..*\..*\..*\.mhtml"/>
+<data pathPattern="/.*\..*\..*\..*\.mht"/>
+<data pathPattern="/.*\..*\..*\..*\..*\.mhtml"/>
+<data pathPattern="/.*\..*\..*\..*\..*\.mht"/>
+<data pathPattern="/.*\..*\..*\..*\..*\..*\.mhtml"/>
+<data pathPattern="/.*\..*\..*\..*\..*\..*\.mht"/>
+<data pathPattern="/.*\..*\..*\..*\..*\..*\..*\.mhtml"/>
+<data pathPattern="/.*\..*\..*\..*\..*\..*\..*\.mht"/>
+<data pathPattern="/.*\..*\..*\..*\..*\..*\..*\..*\.mhtml"/>
+<data pathPattern="/.*\..*\..*\..*\..*\..*\..*\..*\.mht"/>
+<data pathPattern="/.*\..*\..*\..*\..*\..*\..*\..*\..*\.mhtml"/>
+<data pathPattern="/.*\..*\..*\..*\..*\..*\..*\..*\..*\.mht"/>
+<data pathPattern="/.*\..*\..*\..*\..*\..*\..*\..*\..*\..*\.mhtml"/>
+<data pathPattern="/.*\..*\..*\..*\..*\..*\..*\..*\..*\..*\.mht"/>
+</intent-filter>
+<intent-filter>
+<action name="android.intent.action.VIEW"/>
+<category name="android.intent.category.DEFAULT"/>
+<category name="android.intent.category.BROWSABLE"/>
+<data scheme="file"/>
+<data host="*"/>
+<data pathPattern="/.*\.mhtml"/>
+<data pathPattern="/.*\.mht"/>
+<data pathPattern="/.*\..*\.mhtml"/>
+<data pathPattern="/.*\..*\.mht"/>
+<data pathPattern="/.*\..*\..*\.mhtml"/>
+<data pathPattern="/.*\..*\..*\.mht"/>
+<data pathPattern="/.*\..*\..*\..*\.mhtml"/>
+<data pathPattern="/.*\..*\..*\..*\.mht"/>
+<data pathPattern="/.*\..*\..*\..*\..*\.mhtml"/>
+<data pathPattern="/.*\..*\..*\..*\..*\.mht"/>
+<data pathPattern="/.*\..*\..*\..*\..*\..*\.mhtml"/>
+<data pathPattern="/.*\..*\..*\..*\..*\..*\.mht"/>
+<data pathPattern="/.*\..*\..*\..*\..*\..*\..*\.mhtml"/>
+<data pathPattern="/.*\..*\..*\..*\..*\..*\..*\.mht"/>
+<data pathPattern="/.*\..*\..*\..*\..*\..*\..*\..*\.mhtml"/>
+<data pathPattern="/.*\..*\..*\..*\..*\..*\..*\..*\.mht"/>
+<data pathPattern="/.*\..*\..*\..*\..*\..*\..*\..*\..*\.mhtml"/>
+<data pathPattern="/.*\..*\..*\..*\..*\..*\..*\..*\..*\.mht"/>
+<data pathPattern="/.*\..*\..*\..*\..*\..*\..*\..*\..*\..*\.mhtml"/>
+<data pathPattern="/.*\..*\..*\..*\..*\..*\..*\..*\..*\..*\.mht"/>
+<data mimeType="*/*"/>
+</intent-filter>
+<intent-filter>
+<action name="android.intent.action.MEDIA_SEARCH"/>
+<category name="android.intent.category.DEFAULT"/>
+</intent-filter>
+<intent-filter>
+<action name="android.speech.action.VOICE_SEARCH_RESULTS"/>
+<category name="android.intent.category.DEFAULT"/>
+</intent-filter>
+<intent-filter>
+<action name="android.nfc.action.NDEF_DISCOVERED"/>
+<category name="android.intent.category.DEFAULT"/>
+<data scheme="http"/>
+<data scheme="https"/>
+</intent-filter>
+<intent-filter>
+<action name="android.intent.action.SEARCH"/>
+</intent-filter>
+<intent-filter>
+<action name="android.intent.action.WEB_SEARCH"/>
+<category name="android.intent.category.DEFAULT"/>
+</intent-filter>
+<intent-filter>
+<action name="com.sec.android.airview.HOVER"/>
+</intent-filter>
+<intent-filter>
+<action name="android.intent.action.VIEW"/>
+<category name="android.intent.category.DEFAULT"/>
+<category name="android.intent.category.BROWSABLE"/>
+<category name="com.google.intent.category.DAYDREAM"/>
+<data scheme="http"/>
+<data scheme="https"/>
+<data scheme="about"/>
+<data scheme="javascript"/>
+<data scheme="microsoft-edge"/>
+<data scheme="microsoft-edge-http"/>
+<data scheme="microsoft-edge-https"/>
+<data scheme="microsoft-edge-x"/>
+<data scheme="microsoft-edge-x-callback"/>
+<data scheme="x-msauth-microsoft-edge-https"/>
+</intent-filter>
+<intent-filter>
+<action name="android.intent.action.VIEW"/>
+<category name="android.intent.category.DEFAULT"/>
+<category name="android.intent.category.BROWSABLE"/>
+<data scheme="http-intunemam"/>
+<data scheme="https-intunemam"/>
+</intent-filter>
+<meta-data name="android.app.searchable" resource="@370671759"/>
+</activity-alias>
+<activity-alias label="@370410146" name="com.microsoft.bing.ProcessTextSearch" exported="true" targetActivity="org.chromium.chrome.browser.document.ChromeLauncherActivity">
+<intent-filter>
+<action name="android.intent.action.PROCESS_TEXT"/>
+<category name="android.intent.category.DEFAULT"/>
+<data mimeType="text/plain"/>
+</intent-filter>
+</activity-alias>
+<activity theme="@370477111" name="org.chromium.chrome.browser.media.MediaLauncherActivity" enabled="false" exported="true" excludeFromRecents="true">
+<intent-filter>
+<action name="android.intent.action.VIEW"/>
+<category name="android.intent.category.DEFAULT"/>
+<data mimeType="image/*"/>
+<data mimeType="video/*"/>
+<data scheme="file"/>
+<data scheme="content"/>
+</intent-filter>
+</activity>
+<activity-alias theme="@370477111" name="org.chromium.chrome.browser.media.AudioLauncherActivity" enabled="false" exported="true" excludeFromRecents="true" targetActivity="org.chromium.chrome.browser.media.MediaLauncherActivity">
+<intent-filter>
+<action name="android.intent.action.VIEW"/>
+<category name="android.intent.category.DEFAULT"/>
+<data mimeType="audio/*"/>
+<data scheme="file"/>
+<data scheme="content"/>
+</intent-filter>
+</activity-alias>
+<activity theme="@370477115" name="org.chromium.chrome.browser.media.PictureInPictureActivity" exported="false" excludeFromRecents="true" configChanges="0xd80" noHistory="true" resizeableActivity="true" supportsPictureInPicture="true"/>
+<activity theme="@370477111" name="org.chromium.chrome.browser.LauncherShortcutActivity" exported="false" taskAffinity="" excludeFromRecents="true">
+<property name="android.window.PROPERTY_SUPPORTS_MULTI_INSTANCE_SYSTEM_UI" value="true"/>
+</activity>
+<activity theme="@370475667" name="org.chromium.chrome.browser.dragdrop.DragAndDropLauncherActivity" exported="false" taskAffinity="" excludeFromRecents="true" launchMode="4" windowNoDisplay="true">
+<property name="android.window.PROPERTY_SUPPORTS_MULTI_INSTANCE_SYSTEM_UI" value="true"/>
+<intent-filter>
+<action name="org.chromium.chrome.browser.dragdrop.action.VIEW"/>
+<category name="android.intent.category.BROWSABLE"/>
+<data scheme="http"/>
+<data scheme="https"/>
+</intent-filter>
+</activity>
+<activity theme="@370477111" name="org.chromium.chrome.browser.incognito.IncognitoTabLauncher" enabled="false" exported="true" taskAffinity="" excludeFromRecents="true">
+<intent-filter>
+<action nam
